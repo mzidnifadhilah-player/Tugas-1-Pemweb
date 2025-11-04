@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        .subtitle {
+            text-align: left;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            font-size: 14px;
+        }
+        
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+        
+        .button-link {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .button-link:hover {
+            background-color: #45a049;
+        }
+        </style>
+</head>
+<body>
+  <div class="container">
+        <h1>Class Registration Form</h1>
+        <p class="subtitle">Please fill out the form below to register for our class.</p>
+        
+        <form action="#" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">No handpone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+    
+    <section>
+      <h2>Class level</h2>
+      <div class="grid">
+           <div class="row">
+             <label for="class level"></label>
+             <select>
+               <option>special</option>
+               <option>class 1</option>
+               <option>class 2</option>
+               <option>class 3</option>
+             </select>
+             <p class="subtitle">please choose the appropriate level for you experience</p>
+           </div>
+           
+           <div class="form-group">
+             <h2>Class Days</h2>
+             <p class="subtitle"> please select the day you are available to attend class</p>
+             <div class="form-row">
+             <div class="form-group">
+               <label>
+                 <input type="checkbox">Monday
+               </label>
+               <label>
+                 <input type="checkbox">Tuesday
+               </label>
+               </div>
+               <div class="form-group">
+               <label>
+                 <input type="checkbox">Wedneday
+               </label>
+               <label>
+                 <input type="checkbox">Thursday
+               </label>
+               </div>
+               <div class="form-group">
+               <label>
+                 <input type="checkbox">Friday
+               </label>
+               <label>
+                 <input type="checkbox">Saturday
+               </label>
+               </div>
+               </div>
+           </div>
+           
+           <div class="row">
+             <div>
+               <label>
+                 <input type="checkbox"> l agree to terms and conditions of the Class Registration.
+               </label>
+             </div>
+             
+             <a href="#" class="button-link">Register Now</a>
+             </form>
+             </div>
+    </section>
+  </main>
+</body>
+</html>
