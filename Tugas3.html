@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3 - FAQ Interaktif jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: linear-gradient(135deg,#00FFFF,#00FF00);
+        }
+        .faq-container {
+            margin-top: 20px;
+        }
+        .question {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+    
+        .question-hover {
+            background-color: #8F00FF;
+            color: white;
+        }
+        .answer {
+            background-color: #00FFFF;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: none; 
+        }
+        .arrow {
+            float: right;
+            transition: transform 0.3s;
+        }
+        .expanded .arrow {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQ Interaktif</h1>
+
+    <div class="faq-container">
+        <div class="question" id="q1">
+            Apa itu jQuery? <span class="arrow">▶</span>
+        </div>
+        <div class="answer">
+            JQuery juga merupakan library JavaScript yang dapat mempercepat proses pembuatan website dengan sintaks yang tidak terlalu rumit, kodenya ringkas, dan fiturnya lengkap. jQuery membuat pemrosesan di HTML, seperti event handling, animasi, perubahan dan manipulasi dokumen, serta Ajax dapat menjadi lebih sederhana.
+        </div>
+
+        <div class="question" id="q2">
+         apa yang dimaksud dengan DOM manipulation? <span class="arrow">▶</span>
+        </div>
+        <div class="answer">
+            DOM MANIPULATION adalah teknik menggunakan JavaScript untuk mengubah struktur, konten, dan gaya halaman web secara dinamis setelah halaman dimuat, dengan cara memperlakukan elemen HTML sebagai objek yang bisa diakses dan dimodifikasi (menambah, menghapus, mengubah teks, atribut, atau gaya) tanpa perlu memuat ulang halaman, menciptakan pengalaman web yang interaktif dan responsif. 
+        </div>
+
+        <div class="question" id="q3">
+            Apa fungsi .hide() dan .show()? <span class="arrow">▶</span>
+        </div>
+        <div class="answer">
+            Fungsi .hide() dan .show() adalah metode dalam JavaScript (sering digunakan dengan jQuery) untuk mengontrol visibilitas elemen HTML; .hide() menyembunyikan elemen (mirip display:none di CSS) sehingga tidak terlihat dan tidak memengaruhi tata letak, sedangkan .show() memunculkannya kembali ke tampilan awal, seringkali dengan efek transisi perlahan untuk menambah interaktivitas pada halaman web atau aplikasi.
+        </div>
+        
+        <div class="question" id="q4">
+            Apa perbedaan antara .hover() dan CSS :hover? <span class="arrow">▶</span>
+        </div>
+        <div class="answer">
+            CSS :hover murni untuk tujuan gaya visual sederhana. .hover() jQuery adalah fungsi pintasan untuk mengikat dua penangan acara: satu untuk mouseenter (saat masuk) dan satu lagi untuk mouseleave (saat keluar), memungkinkan Anda menjalankan logika JavaScript yang lebih kompleks (seperti menambahkan/menghapus kelas dinamis, bukan hanya mengubah warna) saat kursor masuk atau keluar.
+        </div>
+
+        <div class="question" id="q5">
+            Apa fungsi .addClass() dalam jQuery? <span class="arrow">▶</span>
+        </div>
+        <div class="answer">
+            Fungsi $.addClass() di jQuery adalah untuk menambahkan satu atau lebih nama kelas CSS ke elemen HTML yang dipilih tanpa menghapus kelas yang sudah ada, memungkinkan manipulasi gaya (styling) atau perilaku elemen secara dinamis melalui JavaScript.
+        </div>
+    <script src="tugas3.js"></script>
+<div></div>
+</body>
+</html>
